@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 70px;
+    width: 100vw;
+    background-color:#20222A;
+}
