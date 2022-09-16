@@ -1,0 +1,29 @@
+// HOME
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 100px;
+    height: 100vh;
+    width: 100vw;
+    background: url(../assets/images/banner.png) no-repeat;
+    background-size: cover;
+    h1 {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 60px;
+        // @media screen and ( maxwidth: 1024px) {
+        //     font-size: 48px;
+        // }
+    }
+    .btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        padding: 14px 40px;
+    }
+}

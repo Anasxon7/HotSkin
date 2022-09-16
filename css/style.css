@@ -1,3 +1,4 @@
+/*=============== BASE ===============*/
 /* Font Rubik */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 * {
@@ -8,12 +9,34 @@
   color: #fff;
 }
 
+.btn {
+  background: #f4c038;
+  color: #20222a;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 48px;
+  text-decoration: none;
+  user-select: none;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+
+@keyframes link {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 header {
   position: fixed;
   top: 0;
   height: 70px;
   width: 100vw;
-  background-color: #20222A;
+  background-color: #20222a;
+  user-select: none;
 }
 header nav {
   display: flex;
@@ -30,14 +53,136 @@ header nav .nav__list {
   margin-right: auto;
 }
 header nav .nav__list .nav__link {
+  position: relative;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #fff;
+  padding-bottom: 16px;
 }
-header nav .nav__list .nav__link:hover {
-  color: #F4C038;
+header nav .nav__list .nav__link:hover::before, header nav .nav__list .nav__link.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 20px;
+  background-color: #f4c038;
+}
+header nav .nav__list .nav__link:hover::before {
+  animation: link 0.3s ease;
+}
+header nav .nav__list .nav__link:hover, header nav .nav__list .nav__link.active {
+  color: #f4c038;
+}
+header nav .nav__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+header nav .nav__btns .custom-select {
+  width: 80px;
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+header nav .nav__btns .custom-select select {
+  display: none;
+}
+header nav .nav__btns .select-selected {
+  background-color: #20222a;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.5019607843) !important;
+}
+header nav .nav__btns .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+header nav .nav__btns .select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+header nav .nav__btns .select-items div,
+header nav .nav__btns .select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+header nav .nav__btns .select-items {
+  position: absolute;
+  background-color: #20222a;
+  top: 100%;
+  left: 0;
+  border-radius: 12px;
+  right: 0;
+  z-index: 99;
+}
+header nav .nav__btns .select-hide {
+  display: none;
+}
+header nav .nav__btns .select-items div:hover,
+header nav .nav__btns .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+header nav .nav__btns .btn {
+  padding: 10px 24px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 14px 108px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #20222a;
+  color: #fff;
+}
+footer .copyright {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.5;
+}
+footer .copyright:hover {
+  opacity: 1;
+}
+footer .navigation {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 16px;
+}
+footer .navigation .footer_link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.5;
+}
+footer .navigation .footer_link:hover {
+  opacity: 1;
+}
+
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+  background-color: #20222a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
@@ -55,4 +200,140 @@ main h1 {
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
+}
+main .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding: 14px 40px;
+}
+
+.full-screen.login {
+  flex-direction: column;
+}
+.full-screen.login .myForm {
+  position: relative;
+  padding: 50px;
+}
+@media screen and (max-width: 480px) {
+  .full-screen.login .myForm {
+    padding: 20px 0px;
+  }
+}
+.full-screen.login .myForm input {
+  width: 350px;
+  display: block;
+  margin: 20px 0;
+  padding: 10px 17px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid hsl(228deg, 14%, 25%);
+  border-radius: 12px;
+}
+@media screen and (min-width: 1280px) {
+  .full-screen.login .myForm input {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .full-screen.login .myForm input {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .full-screen.login .myForm input {
+    width: 250px;
+  }
+}
+.full-screen.login .myForm .pasItem {
+  position: absolute;
+  top: 135px;
+  right: 65px;
+  cursor: pointer;
+}
+@media screen and (max-width: 420px) {
+  .full-screen.login .myForm .pasItem {
+    top: 105px;
+    right: 10px;
+  }
+}
+.full-screen.login .myForm .loginBtn {
+  width: 350px;
+  display: block;
+  margin: 20px 0;
+  padding: 10px 17px;
+  outline: none;
+  border: none;
+}
+@media screen and (min-width: 1280px) {
+  .full-screen.login .myForm .loginBtn {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .full-screen.login .myForm .loginBtn {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .full-screen.login .myForm .loginBtn {
+    width: 250px;
+  }
+}
+
+.signForm {
+  position: relative;
+  padding-left: 60px;
+}
+.signForm input,
+.signForm textarea {
+  width: 450px;
+  display: block;
+  margin: 20px 0;
+  padding: 10px 17px;
+  outline: none;
+  resize: none;
+  background-color: transparent;
+  border: 1px solid hsl(228deg, 14%, 25%);
+  border-radius: 12px;
+}
+@media screen and (min-width: 1280px) {
+  .signForm input,
+.signForm textarea {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .signForm input,
+.signForm textarea {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .signForm input,
+.signForm textarea {
+    width: 250px;
+  }
+}
+.signForm .pasItem {
+  position: absolute;
+  top: 135px;
+  right: 65px;
+  cursor: pointer;
+}
+@media screen and (max-width: 420px) {
+  .signForm .pasItem {
+    top: 105px;
+    right: 10px;
+  }
+}
+.signForm .signBtn {
+  width: 200px;
+  display: block;
+  margin: 20px 0;
+  padding: 14px 24px;
+  outline: none;
+  border: none;
 }

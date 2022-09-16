@@ -1,0 +1,43 @@
+.signForm {
+    position: relative;
+    padding-left: 60px;
+    & input,
+    textarea {
+        width: 450px;
+        display: block;
+        margin: 20px 0;
+        padding: 10px 17px;
+        outline: none;
+        resize: none;
+        background-color: transparent;
+        border: 1px solid hsl(228, 14%, 25%);
+        border-radius: 12px;
+        @media screen and (min-width: 1280px) {
+            width: 400px;
+        }
+        @media screen and (max-width: 768px) {
+            width: 300px;
+        }
+        @media screen and (max-width: 480px) {
+            width: 250px;
+        }
+    }
+    .pasItem {
+        position: absolute;
+        top: 135px;
+        right: 65px;
+        cursor: pointer;
+        @media screen and (max-width: 420px) {
+            top: 105px;
+            right: 10px;
+        }
+    }
+    & .signBtn {
+        width: 200px;
+        display: block;
+        margin: 20px 0;
+        padding: 14px 24px;
+        outline: none;
+        border: none;
+    }
+}
