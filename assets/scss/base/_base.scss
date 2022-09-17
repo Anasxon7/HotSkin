@@ -10,6 +10,21 @@
     font-family: "Rubik", sans-serif;
     color: #fff;
 }
+
+// conrainer
+.container {
+    width: 80%;
+    margin: 0 auto;
+    @media screen and (max-width: 992px) {
+        width: 90%;
+    }
+    @media screen and (max-width: 768px) {
+        width: 95%;
+    }
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
+}
 // Btn
 .btn {
     background: #f4c038;
@@ -46,7 +61,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 15px 60px;
+        padding: 15px 0px;
         .nav__list {
             display: flex;
             align-items: center;
@@ -152,20 +167,22 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100vw;
-    padding: 14px 108px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 14px 0px;
     background-color: #20222a;
     color: #fff;
-    .copyright {
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-        opacity: 0.5;
-        &:hover {
-            opacity: 1;
+    .footer__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .copyright {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            opacity: 0.5;
+            &:hover {
+                opacity: 1;
+            }
         }
     }
     .navigation {
