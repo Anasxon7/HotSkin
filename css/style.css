@@ -292,6 +292,10 @@ main .btn {
   top: 135px;
   right: 65px;
   cursor: pointer;
+  opacity: 0.5;
+}
+.full-screen.login .myForm .pasItem:hover {
+  opacity: 1;
 }
 @media screen and (max-width: 420px) {
   .full-screen.login .myForm .pasItem {
