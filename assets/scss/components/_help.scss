@@ -1,45 +1,45 @@
-// .main {
-//     width: 100%;
-//     height: 100vh;
-//     background-color: #3D4554;
-//     padding-top: 120px;
-//     h3 {
-//         font-weight: 700;
-//         font-size: 48px;
-//         line-height: 56px;
-//         color: #fff;
-//     }
-//     .help__cards {
-//         display: flex;
-//         align-items: center;
-//         justify-content: start;
-//         flex-wrap: wrap;
-//         flex: 1 1;
-//         gap: 24px;
-//         padding-top: 48px;
-//         .card {
-//             background-color: #20222A;
-//             box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
-//             border-radius: 16px;
-//             display: flex;
-//             flex-direction: column;
-//             align-items: flex-start;
-//             padding: 16px;
-//             gap: 24px;
-//             text-decoration: none;
-//             a {
-//                 font-weight: 500;
-//                 font-size: 18px;
-//                 line-height: 24px;
-//                 color: #FFFFFF;
-//                 text-decoration: none;
-//             }
-//             span {
-//                 font-weight: 400;
-//                 font-size: 14px;
-//                 line-height: 20px;
-//                 color: #ffffff80;
-//             }
-//         }
-//     }
-// }
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: #3D4554;
+    padding-top: 120px;
+    h3 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        color: #fff;
+    }
+    .help__cards {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        flex: 1 1;
+        gap: 24px;
+        padding-top: 48px;
+        .card {
+            background-color: #20222A;
+            box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 16px;
+            gap: 24px;
+            text-decoration: none;
+            a {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+            span {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #ffffff80;
+            }
+        }
+    }
+}
