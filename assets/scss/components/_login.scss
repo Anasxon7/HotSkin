@@ -3,8 +3,7 @@
     flex-direction: column;
     .myForm {
         position: relative;
-        padding: 50px;
-
+        padding: 0px;
         @media screen and (max-width: 480px) {
             padding: 20px 0px;
         }
