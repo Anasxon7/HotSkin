@@ -69,6 +69,9 @@ header {
             list-style-type: none;
             margin-left: 50px;
             margin-right: auto;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
             .nav__link {
                 position: relative;
                 text-decoration: none;
@@ -170,15 +173,24 @@ footer {
     padding: 14px 0px;
     background-color: #20222a;
     color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 20px;
+@media screen and (max-width: 768px) {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 10px 5px;
+}
+@media screen and (max-width: 420px) {
+    font-size: 7px;
+} 
     .footer__main {
         display: flex;
         align-items: center;
         justify-content: space-between;
         .copyright {
             text-decoration: none;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 20px;
             opacity: 0.5;
             &:hover {
                 opacity: 1;
@@ -192,9 +204,6 @@ footer {
         gap: 16px;
         .footer_link {
             text-decoration: none;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 20px;
             opacity: 0.5;
             &:hover {
                 opacity: 1;
@@ -214,4 +223,4 @@ footer {
 }
 
 @media screen and (max-width: 768px) {}
-@media screen and (max-width: 420px) {}
+@media screen and (max-width: 420px) {} 

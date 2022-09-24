@@ -8,6 +8,7 @@
     margin-left: 20px;
 }
 
+// Main
 main {
     display: flex;
     flex-direction: column;
@@ -18,13 +19,29 @@ main {
     width: 100vw;
     background: url(../assets/images/banner.png) no-repeat;
     background-size: cover;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     h1 {
         font-weight: 700;
         font-size: 56px;
         line-height: 60px;
-        // @media screen and ( maxwidth: 1024px) {
-        //     font-size: 48px;
-        // }
+        @media screen and (min-width: 1444px) {
+            font-size: 78px;
+            line-height: 80px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 40px;
+            line-height: 45px;
+            text-align: center;
+        }
+        @media screen and (max-width: 480px) {
+            font-size: 28px;
+            line-height: 35px;
+        }
+
     }
     .btn {
         width: 240px;
@@ -34,5 +51,14 @@ main {
         align-items: center;
         margin-top: 40px;
         padding: 14px 40px;
+        @media screen and (max-width: 768px) {
+            width: 60%;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        @media screen and (max-width: 480px) {
+            padding: 10px 20px;
+            text-align: center;
+        }
     }
 }
