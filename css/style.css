@@ -467,6 +467,7 @@ main .btn {
   padding-top: 48px;
 }
 .main .help__cards .card {
+  position: relative;
   width: 296px;
   height: 160px;
   display: flex;
@@ -478,14 +479,23 @@ main .btn {
   box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
   text-decoration: none;
 }
-.main .help__cards .card a {
+.main .help__cards .card .card__body {
+  padding-top: 20px;
+}
+.main .help__cards .card .card__body a {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
   text-decoration: none;
 }
-.main .help__cards .card span {
+.main .help__cards .card .card__footer {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  width: 100%;
+}
+.main .help__cards .card .card__footer span {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
