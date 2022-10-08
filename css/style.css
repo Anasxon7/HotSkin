@@ -452,7 +452,7 @@ main .btn {
 .main {
   width: 100%;
   min-height: 100vh;
-  background-color: #3D4554;
+  background-color: #272E3B;
   padding-top: 100px;
   padding-bottom: 60px;
 }
@@ -505,10 +505,6 @@ main .btn {
   font-size: 14px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.5019607843);
-}
-
-.contact {
-  background-color: #272E3B;
 }
 
 .contact__cards {
